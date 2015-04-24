@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en'>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <!--
+      ************************************************************
+      * VLC-Record Help (german version)
+      * Author:  Jo2003
+      * Begin:   2012-07-12
+      * $HeadURL: https://vlc-record.googlecode.com/svn/documentation/vlc-record/help_de.tmpl $
+      * $Id: help_de.tmpl 1440 2014-10-14 14:53:42Z Olenka.Joerg $
+      ************************************************************
+      -->
+      <title>[%PROGRAM%] Hilfe</title>
+      <link rel="stylesheet" type="text/css" href="help.css" />
+   </head>
+   <body>
+      <h1 id="top">[%PROGRAM%]</h1>
+      <!--
+        ************************************************************
+        * TOC not needed for QtHelp
+        * Remove comment to have it available for e.g. web view!
+        ************************************************************
+      <div class="index">
+         <ol>
+            <li><a href="#about">Über das Programm</a></li>
+            <li><a href="#versions">Versionen</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#ftsettings">Einstellungen beim ersten Start</a></li>
+            <li><a href="#settings">Einstellungen</a>
+               <ol>
+                  <li><a href="#mainsettings">Haupteinstellungen</a></li>
+                  <li><a href="#shortcuts">Tastenkürzel</a></li>
+                  <li><a href="#advsettings">Erweiterte Einstellungen</a></li>
+                  <li><a href="#parentmanager">Elternmanager</a></li>
+               </ol>
+            </li>
+            <li><a href="#discovergui">Ein Blick auf die Benutzeroberfläche</a></li>
+            <li><a href="#discoverfeatures">Ein Blick auf die Features</a>
+               <ol>
+                  <li><a href="#favchannels">Lieblingssender</a></li>
+                  <li><a href="#vodbrowser">Videothek</a></li>
+                  <li><a href="#archive">Archiv</a></li>
+                  <li><a href="#timerrec">Aufnahme-Timer</a></li>
+                  <li><a href="#otr">Ein-Klick-Aufnahme</a></li>
+                  <li><a href="#clfilter">Kanallistenfilter</a></li>
+                  <li><a href="#watchlist">Merkliste</a></li>
+                  <li><a href="#context">Video Context Menü</a></li>
+                  <li><a href="#fullscreen">Vollbild Modus</a></li>
+                  <li><a href="#minimode">Das Minimale Interface</a></li>
+               </ol>
+            </li>
+         </ol>
+      </div>
+      -->
+      <h2 id="about">Über das Programm</h2>
+      [%PROGRAM%] ist ein Programm, um IPTV Streams von [%SERVICE%] anzusehen oder aufzuzeichen.
+      Es wurde in C++ unter der Benutzung von <a class="extern" href="http://qt-project.org/" target="_blank">Qt framework by Qt Project <img src="images/external.png" alt="external" /></a> geschrieben.
+      Die Player-Funktion wurde mit Hilfe der libVLC von
+      <a class="extern" href="http://www.videolan.org/vlc/" target="_blank">Videolans VLC player <img src="images/external.png" alt="external" /></a> realisiert.
+      <!-- [%HIDEPROJECT%]
+      <br />
+      [%PROGRAM%] ist OpenSource. Sie können den Source-Code als auch die neuesten Builds auf der
+      <a class="extern" href="http://code.google.com/p/vlc-record/" target="_blank">Projektseite <img src="images/external.png" alt="external" /></a> finden (gehostet von Google-Code).
+      [%HIDEPROJECT%] -->
+      <h2 id="versions">Versionen</h2>
+      Es sind Versionen verfügbar für:
+      <ul>
+         <li>Windows (XP oder besser)</li>
+         <li>Mac OSX 10.6 x86_64 oder besser</li>
+         <li>Ubuntu Linux i368/amd64 (laufende Version)</li>
+      </ul>
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h2 id="features">Features</h2>
+      [%PROGRAM%] hat folgende Features:
+      <ul>
+         <li>Wiedergabe und Aufnahme von Live-Streams</li>
+         <li>EPG - Elektronische Programmvorschau</li>
+         <li>Archiv - 2 Wochen für die meisten Programme (Wiedergabe / Aufnahme)</li>
+         <li>Aufnahme-Timer</li>
+         <li>Videothek (Wiedergabe / Aufnahme)</li>
+         <li>Elternmanager</li>
+         <li>OTR - Ein-Klick-Aufnahme</li>
+         <li>Merkliste</li>
+         <li>Bildschirmfoto-Funktion</li>
+      </ul>
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h2 id="installation">Installation</h2>
+      <h3>Windows</h3>
+      Das Programm wird standardmäßig in ihrem lokalen Programmordner installiert
+      (c:\Users\[Benutzername]\AppData\Local\[%PROGRAM%]). Damit benötigen sie
+      keine Administratorrechte, um das Programm zu installieren.<br />
+      Die Programmeinstellungen werden in ihrem Ordner für die lokalen Einstellungen gespeichert
+      (c:\Users\[Benutzername]\AppData\Roaming\[%PROGRAM%]).
+      <h3>Mac OSX</h3>
+      Nachdem sie das dmg-Image geöffnet haben, können sie das App-Paket per Drag und Drop in ihren Programmordner
+      kopieren. Die Programmeinstellungen werden in ihrem Benutzerordner gespeicher
+      (~/.[%PROGRAM%]).
+      <h3>Ubuntu</h3>
+      Nachdem sie einen Doppelklick auf das deb-Paket gemacht haben, wird das Ubuntu Softwarecenter gestartet. Wenn
+      sie auf "installieren" klicken, werden das Programm sowie alle benötigten Bibliotheken installiert.
+      Außerdem wird ein Programmstarter angelegt. Um das Programm zu starten, drücken sie bitte kurz die
+      "Windows-Taste" ihrer Tastatur. Daraufhin können sie im Dash die Anfangsbuchstaben (z.B. vlc-) eingeben.
+      Jetzt sollte der Starter angezeigt werden. Ein Klick auf den Starter startet das Programm.
+      Sie können das laufende Programm auch an die Unity-Leiste (links) anheften. Dann können sie das Pogramm einfach
+      per Klick auf das Programm-Symbol starten.<br />
+      Die Programmeinstellungen werden in ihrem Benutzerverzeichnis gespeichert (~/.[%PROGRAM%]).
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h2 id="ftsettings">Einstellungen beim ersten Start</h2><br />
+      <img src="images/lang/de/ftsettings.png" alt="First Time Settings Dialog" title="First Time Settings Dialog" /><br />
+      Hier müssen sie ihre Zugangsdaten eingeben. Wenn sie die Erotik-Kanäle in ihrer Kanalliste angezeigt haben
+      wollen, markieren sie bitte die entsprechende Checkbox. Wenn sie den Eltern-Code in die untere Textbox eingeben,
+      können sie die Erotik-Kanäle ansehen, ohne den Eltern-Code eingeben zu müssen. Ich würde aber dringend empfehlen,
+      diese Textbox leer zu lassen.
+      <b>Bitte beachten sie: Ihr Eltern-Code entspricht dem Account-Passwort solange sie diesen nicht ändern.</b><br />
+      Dieser Dialog wird nur beim ersten Start des Programmes angezeigt. Wenn sie die Programmeinstellungen gelöscht haben,
+      wird dieser Dialog beim nächten Programmstart wieder angezeigt.
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h2 id="settings">Einstellungen</h2>
+      Sie starten die Einstellungen, wenn sie auf folgendes Icon unten rechts in der Benutzeroberfläche drücken:
+      <img src="images/tools.png" alt="Settings" title="Settings" />
+      <h3 id="mainsettings">Haupteinstellungen</h3><br />
+      <img src="images/lang/de/set_main.png" alt="Main Settings" title="Main Settings" /><br />
+      Auf dieser Seite können sie folgende Einstellungen vornehmen:
+      <ul>
+         <li>Benutzer / Passwort</li>
+         <li>Zielpfad - Wo sollen die aufgenommenen Videos gespeichert werden?</li>
+         <li>Player Pfad - Wenn sie ein externes Player-Programm starten wollen, müssen sie hier den Pfad zu diesem Programm eingeben (optional).</li>
+         <li>Stream Server (Standort) - Wählen sie den ihnen am nächsten liegenden.</li>
+         <li>Bitrate - Wählen sie zwischen "Premium", "Standard", "Eco" und "Handy"</li>
+         <li>Puffer - Zeit des Puffers in Sekunden. Erhöhen sie diesen Wert, wenn sie Probleme bei der Wiedergabe haben (Voreinstellung: 8s).</li>
+         <li>Timeshift - Zeitverschiebung in Stunden zwischen moskauer Zeit und ihrer lokalen Zeit.</li>
+         <li>Sprache - Die Änderung wird erst übernommen, wenn sie die Einstellungen abspeichern.</li>
+         <li>Logos neu laden - Wenn sie Probleme mit den Logos in der Kanalliste sehen (z.B. wenn ein Logo nicht zum Sender passt) können sie hier die Logos neu laden lassen.</li>
+         <li>Textgröße anpassen - Hier können sie die Textgröße für das Programm anpassen.</li>
+         <li>Erweiterte Einstellungen - Aktiviert die Seite mit den erweiterten Einstellungen (Voreinstellung: aus).</li>
+      </ul>
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="shortcuts">Tastenkürzel</h3><br />
+      <img src="images/lang/de/set_shortcuts.png" alt="Shortcut Settings" title="Shortcut Settings" /><br />
+      Hier können sie die voreingestellten Tastenkürzel ändern. Um das zu tun, markieren sie ein Tastenkürzel
+      mit der Maus und drücken anschließend die neue Tastenkombination. Wenn sich die Zeile rot färbt,
+      ist dieses Tastenkürzel so bereits vergeben.<br />
+      Sie können die Tastenkürzel zurücksetzen, wenn sie auf den unteren Button klicken.
+      <!-- <div class="toplink"><a href="#about" target="_self">Top</a></div> -->
+      <h3 id="advsettings">Erweiterte Einstellungen</h3><br />
+      <img src="images/lang/de/set_advanced.png" alt="Advanced Settings" title="Advanced Settings" /><br />
+      Auf dieser Seite können sie folgende Einstellungen ändern:
+      <ul>
+         <li>Proxy Server - Konfigurieren sie hier einen Proxy-Server, wenn sie nicht direkt auf das Internet zugreifen können.</li>
+         <li>API Server - Hier können sie den API Server ändern. Drücken sie <b>Strg+Alt+A</b> um dieses Feld zu aktivieren<!-- [%HIDEPROJECT%] (Voreinstellung: [%APISERVER%] {Besser nicht ändern!})[%HIDEPROJECT%] -->.</li>
+         <li>Player Module - Player-abhängige Konfigurationsdateien. Wählen sie zwischen "5_libvlc.mod" und "9_libvlc_odl.mod" (Voreinstellung: 5_libvlc.mod).
+         Sie können sich diese Dateien in einem Text-Editor ansehen. Nur ändern, wenn sie wirklich wissen was sie tun!</li>
+         <li>Log Level - Hier konfigurieren sie, was alles mitgeloggt wird (Voreinstellung: logge alles).
+         Wenn sie Hilfe brauchen, weil etwas nicht so funktioniert wie sie es erwarten, ändern sie diese Einstellung besser nicht.</li>
+         <li>Shutdown Kommando - Wenn sie wollen, dass ihr PC nach getaner Arbeit herunter gefahren wird (z.B. nach einer Timer-Aufnahme),
+         geben sie hier bitte das passende Kommando ein. Für Windows gibt es eine Voreinstellung.</li>
+         <li>Frage nach Zieldateinamen - Das Programm wird sie nach einem Dateinamen für das aufzuzeichnende Video fragen (Voreinstellung: aus).</li>
+         <li>Trenne Player - Wenn sie ein externes Playerprogramm nutzen, wird dieses nach dem Start von [%PROGRAM%] getrennt.
+         Es ist dann unabhängig und kann nicht mehr von [%PROGRAM%] kontrolliert werden (Voreinstellung: aus).</li>
+         <li>Doppelklick ... startet Player - Wenn diese Option auf <b>an</b> steht, startet die Wiedergabe einer Sendung, wenn sie einen Doppelklick auf einen Sender in der Kanalliste machen (Voreinstellung: an).</li>
+         <li>Ins Systray minimieren - Wenn diese Option auf <b>an</b> steht, wird das Programm von der Taskleiste versteckt, wenn sie es minimieren.
+         Stattdessen wird ein Icon im Systray über das laufende Programm informieren (Voreinstellung: aus).</li>
+         <li>Translit für Dateinamen - Transliteriert den Dateinamen für eine Videoaufnahme in lateinische Buchstaben (Voreinstellung: aus).</li>
+         <li>GPU-Beschleunigung - Benutzt die GPU, um das Video zu dekodieren (experimentell, Voreinstellung: aus).</li>
+         <li>Deinterlacing Modus - Wenn Sie Deinterlacing im Video Kontextmenü eingeschaltet haben, können Sie hier den entsprechenden Algorithmus wählen (eine gute Voreinstellung: blend).</li>
+         <!-- [%HIDDEN%]
+         <li>Zeige Reklame - Zeigt Reklame vor einem Video aus der Videothek (änderbar nur in VLC-Record, Voreinstellung: an).</li>
+         [%HIDDEN%] -->
+         <li>EPG startet um 0:00 Uhr - Wenn eingeschalten wird das EPG von 0:00 bis 24:00 Uhr angezeigt, ansonsten  03:00 bis 03:00 Uhr (Voreinstellung: ein).</li>
+      </ul>
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="parentmanager">Elternmanager</h3><br />
+      <img src="images/lang/de/set_parent_login.png" alt="Parental Login" title="Parental Login" /><br />
+      Geben sie ihren Eltern-Code ein, um den Elternmanager zu betreten.<br /> <br />
+      <img src="images/lang/de/set_parent_manager.png" alt="Parental Manager" title="Parental Manager" /><br />
+      Hier können sie folgende Dinge konfigurieren:
+      <ul>
+         <li>Kanalmanager - Markieren sie hier Sender, die auf der Kannalliste <b>versteckt</b> werden sollen.</li>
+         <li>Video Manager - Wählen sie den Zugriff auf die verschiedenen Genres.</li>
+         <li>Eltern-Code - Hier können sie den Eltern-Code ändern.</li>
+         <li>Erotik-Kanäle - Hier können sie wählen, was mit den Erotik-Kanälen in der Kanalliste gemacht werden soll.</li>
+      </ul>
+      <b>Bitte beachten sie: Sie müssen diese Einstellungen direkt im Elternmanager speichern, da sie unabhängig von den anderen Einstellungen sind.</b>
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h2 id="discovergui">Ein Blick auf die Benutzeroberfläche</h2><br />
+      <img src="images/lang/de/whole_view.png" alt="Whole View" title="Whole View" /><br />
+      Auf der linken Seite sehen sie die Kanalliste. Oberhalb der Kanalliste ist der Bereich für ihre Lieblingssender.
+      In der linken oberen Ecke können sie zwischen dem Live-Programm und der Videothek(wo verfügbar) wählen.<br />
+      In der Mitte der Benutzeroberfläche sehen sie die elektronische Programmvorschau. Sie zeigt das Programm des gewählten Senders
+      für den gewählten Tag. Mittels der Button am oberen Ende des EPG können sie einen Tag wählen und eine Woche vor oder zurück springen.
+      Am unteren Ende der EPG-Anzeige befindet sich ein Suchfeld mit dem sie nach Stichwörtern in der aktuellen Programmvorschau suchen können.<br />
+      In der oberen rechten Ecke befindet sich das Video-Fenster. Darunter befinden sich die Player-Button und darunter ein kleines Infofenster.<br />
+      Unten in der Mitte befindet sich der Bildschirmfoto-Button. Sie werden diesen Button auch auf dem Kontrollpanel im Vollbild- und Minimalmodus finden.<br />
+      In der unteren rechten Ecke finden sie die Button für die Einstellungen, Programminformationen, Hilfe und zum beenden des Programmes..
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h2 id="discoverfeatures">Ein Blick auf die Features</h2>
+      <h3 id="favchannels">Lieblingssender</h3><br />
+      <img src="images/lang/de/chan_add_favourite.png" alt="Add Favourite" title="Add Favourite" /><br />
+      Sie können bis zu 10 Lieblingssender auswählen - entweder per Drag und Drop oder indem sie einen Rechtsklick
+      auf den jeweiligen Sender in der Kanalliste machen und "Zu Favoriten hinzufügen" wählen. Der Sender wird nun oberhalb
+      der Kanalliste als Button angezeigt. Wenn sie diesen Button drücken, wird dieser Sender als aktueller Sender markiert
+      und die passende Programmvorschau wird geladen. Sie können Lieblingssender entfernen, indem sie einen Rechtsklick
+      in den Bereich oberhalb der Kanalliste machen.
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="vodbrowser">Videothek (wo verfügbar)</h3><br />
+      <img src="images/lang/de/vod_show.png" alt="Show VOD Browser" title="Show VOD Browser" /><br />
+      Sie können die Videothek aktivieren, indem sie oben links auf den entsprechenden Button klicken.<br /> <br />
+      <img src="images/lang/de/vod_genre.png" alt="Choose Genre" title="Choose Genre" /><br />
+      Sie können ein Genre auswählen ...<br /> <br />
+      <img src="images/lang/de/vod_sort.png" alt="Sort" title="Sort" /><br />
+      ... und die Videos sortieren. Hier können sie auch ihre Lieblingsvideos auswählen.<br /> <br />
+      <img src="images/lang/de/vod_search.png" alt="Search VOD" title="Search VOD" /><br />
+      Oder sie können nach einem bestimmten Video suchen.<br /> <br />
+      <img src="images/video_choose.png" alt="Choose Video" title="Choose Video" /><br />
+      Das Video wählen sie einfach per Klick.<br /> <br />
+      <img src="images/lang/de/vod_videoinfo.png" alt="Video Information" title="Video Information" /><br />
+      Nun können sie die Informationen zum gewählten Video ansehen. Sie können dieses Video zu ihren Lieblingsvideo machen oder
+      es aus dieser Auswahl entfernen indem sie auf das Herz in der Beschreibung klicken. Sie können das Video aufzeichnen oder
+      nur wiedergeben. Ein Klick auf <b>[Zurück]</b> bringt sie zur vorhergehenden Seite zurück.
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="archive">Archiv</h3>
+      Das Archiv ist für die meisten Sender verfügbar. Somit können sie jede Sendung, die auf diesem Sender innerhalb
+      der letzten 2 Wochen lief, ansehen.<br />
+      <img src="images/lang/de/rec_archive.png" alt="Archive Play Record" title="Archive Play Record" /><br />
+      Sie können diese Sendung ansehen oder aufnehmen, indem sie auf die entsprechenden Button in der
+      Programmvorschau klicken. Während der Wiedergabe können sie mittels des Sliders unterhalb des Videofensters
+      zu jedem beliebigen Zeitpunkt der Sendung springen..<br /> <br />
+      <img src="images/click_n_go_slider.png" alt="Click'n'Go Slider" title="Click'n'Go Slider" /><br />
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="timerrec">Aufnahme-Timer</h3>
+      Sie können den Aufnahme-Timer entweder durch Klick auf den Button
+      <img src="images/timerrec_own.png" alt="Timer Record" title="Timer Record" />
+      oder durch Klick auf das Uhrsymbol in der Programmvorschau öffnen.<br />
+      <img src="images/lang/de/add_timer_rec.png" alt="Save as Timer" title="Save as Timer" /><br /> <br />
+      Der Aufnahme-Timer öffnet sich:<br />
+      <img src="images/lang/de/timer_record.png" alt="Timer Record Dialog" title="Timer Record Dialog" /><br />
+      In diesem Fenster können sie eine Timer-Aufnahme planen. Sie müssen einen Kanal auswählen, Start- und Endzeit
+      eingeben und einen Dateinamen eingeben, unter dem die Sendung aufgezeichnet wird. Wenn sie "Leise Aufnahme"
+      wählen, wird die Sendung aufgezeichnet ohne sie wiederzugeben. Wenn sie "Herunterfahren" wählen,
+      wird der PC ausgeschaltet sobald alle Aufnahmen erledigt sind. Das funktioniert allerdings nur, wenn sie
+      ein Shutdown-Kommando in den <a href="#advsettings">Einstellungen</a> angegeben haben.
+      Ein Klick auf <img src="images/add.png" alt="Add Job" title="Add Job" /> wird diese Timer-Aufnahme
+      in die Aufnahmeliste übernehmen. Sie können jeden Eintrag ändern, wenn sie einen Doppelklick auf den
+      jeweiligen Eintrag in der Liste machen. Die Daten werden in die oberen Eingabefelder übernommen und
+      sie können ihre Änderungen vornehmen. Ein weiterer Klick auf <img src="images/add.png" alt="Add Job" title="Add Job" />
+      wird ihre Änderungen übernehmen. Sie können eine Timer-Aufnahme aus der Liste entfernen,
+      indem sie den Eintrag markieren und auf <img src="images/delete.png" alt="Remove Job" title="Remove Job" />
+      klicken. Wenn sie einen Eintrag erstellen, wird überprüft, ob ihre Angaben richtig sind. Bei eventuellen Zeitüberschneidungen
+      werden sie gewarnt.
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="otr">OTR (Ein-Klick-Aufnahme)</h3><br />
+      <b>Übrigens:</b> Es handelt sich hierbei nicht um den normalen <a href="#timerrec">Aufnahme-Timer</a>!<br />
+      Dieses Feature ermöglicht es ihnen eine laufende Aufnahme nach einer gewissen Zeit zu stoppen.
+      Es wird aktiviert, wenn sie eine Aufnahme vom Live-Programm oder aus dem Archiv starten.
+      In diesem Fall wird sich der Aufnahme-Knopf von
+      <img src="images/record.png" alt="record" title="record" /> zu
+      <img src="images/record_timer.png" alt="record" title="record" /> verändern.
+      Wenn sie diesen Knopf drücken, wird folgender Dialog erscheinen:<br />
+      <img src="images/lang/de/record_timer.png" alt="record timer" title="record timer" /><br /> <br />
+      Hier können sie die Zeit eingeben, die die Aufnahme laufen soll. Wenn sie auf folgendes Symbol klicken
+      <img src="images/button_ok.png" alt="set" title="set" />, wird der Timer aktiviert. Sie können sehen, wie die Zeit läuft.
+      Nun können sie dieses Fenster schließen.<br />
+      <img src="images/lang/de/close_record_timer.png" alt="close dialog" title="close dialog" /><br /> <br />
+      Wenn der Timer abgelaufen ist, wird die Aufnahme automatisch gestoppt.<br />
+      <b>Übrigens:</b> Sie können diese Einstellungen jederzeit ändern, indem sie erneut auf den Aufnahme-Knopf drücken.
+      Ein Klick auf <img src="images/delete.png" alt="Cancel Timer" title="Cancel Timer" /> deaktiviert den Timer.
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="clfilter">Kanallistenfilter</h3><br />
+      Sie können die Kanalliste nach einer bestimmten Zeichenkette filtern / durchsuchen. Um den Filter zu aktivieren, klicken Sie bitte auf den Button
+      rechts neben der Kanalgruppen-Box:<br />
+      <img src="images/lang/de/chanlist_filter.png" alt="channel list filter" title="channel list filter" /><br /> <br />
+      Nun können Sie die Zeichenkette eingeben:<br />
+      <img src="images/lang/de/chanlist_filter_string.png" alt="channel list filter string" title="channel list filter string" /><br /> <br />
+      Wenn Sie die Eingabe bestätigen, wird die Kanalliste gefiltert angezeigt (alle Kanäle, deren Namen die eingegebene Zeichenkette enthält,
+      werden angezeigt). Der Filter-Button ändert sich zu <img src="images/filter_active.png" alt="active filter" title="active filter" />,
+      um den aktivierten Filter anzuzeigen. Um den Filter zu deaktivieren, entfernen Sie einfach die Zeichenkette und bestätigen Sie die Eingabemaske.
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="watchlist">Merkliste</h3><br />
+      Die Merkliste speichert Sendungen, die Sie zu einem späteren Zeitpunkt ansehen wollen. Um eine Sendung in die Merkliste aufzunehmen,
+      klicken Sie bitte auf den <img src="images/page_add.png" alt="add show" title="add show" /> - Button in der <a href="#archive">Programmvorschau</a>.
+      Der Button der Merkliste rechts unter dem Video-Fenster zeigt die Anzahl der aktuell vorgemerkten Sendungen:<br />
+      <img src="images/watch_list_btn.png" alt="watch list button" title="watch list button" /><br /> <br />
+      Um die Merkliste zu öffnen, klicken Sie bitte auf diesen Button. Ein neues Fenster mit einer Tabelle der vorgemerkten Sendungen öffnet sich.
+      Von diesem Fenster aus können Sie die vorgemerkten Sendungen ansehen oder aufzeichnen. Sie können auch alle Sendungen auf einmal aufnehmen.
+      Die Anzahl der Einträge in dieser Liste ist nicht begrenzt. Sie können Einträge entfernen, indem Sie auf den
+      <img src="images/del_sm.png" alt="del show" title="del show" /> - Button klicken.<br />
+      <img src="images/lang/de/watchlist.png" alt="watch list" title="watch list" /><br /> <br />
+      <b>Bitte beachten Sie:</b> Die Merkliste ist nur für Kanäle verfügbar, die ein Archiv haben. Einträge in der Merkliste,
+      die nicht mehr länger im Archiv liegen, werden automatisch entfernt. Sie können auch Sendungen zur Merkliste hinzufügen,
+      die noch nicht archiviert sind. In diesem Fall werden die Button zum ansehen und abspielen erst dann angezeigt,
+      wenn die entsprechende Sendung archiviert wurde.
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="context">Videokontextmenü</h3>
+      Das Video-Fenster hat ein Kontextmenü, indem Sie das Deinterlacing ein- oder ausschalten können, sowie die
+      Sprachfassung des Video-Streams ändern können (wo vorgesehen).<br />
+      <img src="images/lang/de/play_context_audio.png" alt="player context audio menu" title="player context audio menu" /><br /> <br />
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="minimode">Das Minimale Interface</h3><br />
+      Wenn sie das minimale Interface aktivieren, wird die Programmoberfläche auf das Videofenster reduziert. Nur in diesem Modus ist es möglich,
+      das Videofenster anzupinnen (es immer im Vordergrund zu halten). Das ist sehr nützlich, wenn sie beispielsweise an einem Dokument arbeiten,
+      dabei aber die aktuellsten News sehen müssen. Sie können zum Minimal Interface per Button
+      <img src="images/window_accept.png" alt="minimode button" title="minimode button" /> oder über das Kontextmenü umschalten.<br />
+      <img src="images/lang/de/play_context.png" alt="player context minimode menu" title="player context minimode menu" /><br /> <br />
+      Nur im Kontextmenü ist es möglich, das Videofenster anzupinnen und das Kontrollpanel zu verstecken.<br />
+      Sie können das Minimal Interface über den Button auf dem Kontrollpanel oder über das Kontextmenü verlassen.<br /> <br />
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="fullscreen">Vollbild Modus</h3><br />
+      <img src="images/fullscreen.png" alt="full screen mode" title="full screen mode" /><br /> <br />
+      [%PROGRAM%] unterstützt den Vollbild Modus. Sie können zum Vollbild Modus wechseln, indem sie entweder einen
+      Doppelklick auf das Videofenster machen, die unter Tastenkürzel gewählte <a href="#shortcuts">Vollbild-Tastenkombination</a>
+      aktivieren oder den blauen Button wie im unteren Bild drücken.<br />
+      <img src="images/switch_to_fullscreen.png" alt="switch to full screen" title="switch to full screen" /><br /> <br />
+      Wenn sie die Maus bewegen, wird das Kontrollpanel angezeigt. Dieses Kontrollpanel besitzt genau die gleiche
+      Funktionalität wie das Kontrollpanel im normalen Windows Modus. Es bleibt so lange sichtbar, wie sich die Maus
+      über ihm befindet. Wenn der Mauszeiger das Panel verlässt, wird es nach kurzer Zeit ausgeblendet.<br />
+      Sie können dieses Panel bewegen, indem sie mit der Maus auf den Bewegungsmarker wie im unteren Bild klicken und
+      dann die Maus bewegen.<br />
+      <img src="images/lang/de/fullscreen_move_panel.png" alt="Move control panel" title="Move control panel" /><br /> <br />
+      Sie können den Vollbild Modus genauso verlassen, wie sie ihn gestartet haben:
+      <ul>
+        <li>Einen Doppelklick auf das Videofenster machen.</li>
+        <li>Die gespeicherte Tastenkombination aktivieren.</li>
+        <li>Den blauen Button, wie unten gezeigt, drücken.</li>
+      </ul><br /> <!-- Note: The break is needed here!
+                       Without it it looks strange in help browser
+                       ... don't know why!
+                  -->
+      <img src="images/lang/de/fullscreen_to_normal.png" alt="leave full screen" title="leave full screen" />
+      <br /> <br />
+      Im Standard-Modus sind die erweiterten Einstellungen und -Informationen ausgeblendet:<br />
+      <img src="images/lang/de/panel_hidden_inf.png" alt="Hidden Information" title="Hidden Information" /><br />
+      Sie können diese Einstellungen und Informationen einblenden, indem sie auf die oben rot markierten Pfeile klicken.<br />
+      <img src="images/lang/de/panel_shown_inf.png" alt="Visible Information" title="Visible Information" /><br /> <br />
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <!-- <b style='color: red;'>Please translate --&gt;</b>Whatever<b style='color: red;'>&lt;-- Please translate</b> -->
+   </body>
+</html>

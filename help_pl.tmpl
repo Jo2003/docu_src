@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en'>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <!--
+      ************************************************************
+      * VLC-Record Help (polish version)
+      * Author:  Jo2003
+      * Begin:   2012-07-05
+      * $HeadURL: https://vlc-record.googlecode.com/svn/documentation/vlc-record/help_pl.tmpl $
+      * $Id: help_pl.tmpl 1442 2014-10-15 07:46:56Z Olenka.Joerg $
+      ************************************************************
+      -->
+      <title>[%PROGRAM%] Help</title>
+      <link rel="stylesheet" type="text/css" href="help.css" />
+   </head>
+   <body>
+      <h1 id="top">[%PROGRAM%]</h1>
+      <!--
+        ************************************************************
+        * TOC not needed for QtHelp
+        * Remove comment to have it available for e.g. web view!
+        ************************************************************
+      <div class="index">
+         <ol>
+            <li><a href="#about">O programie</a></li>
+            <li><a href="#versions">Wersje</a></li>
+            <li><a href="#features">Cechy</a></li>
+            <li><a href="#installation">Instalacja</a></li>
+            <li><a href="#ftsettings">Pierwsze ustawienia</a></li>
+            <li><a href="#settings">Ustawienia</a>
+               <ol>
+                  <li><a href="#mainsettings">Ustawienia głowne</a></li>
+                  <li><a href="#shortcuts">Skróty</a></li>
+                  <li><a href="#advsettings">Ustawienia zaawansowane</a></li>
+                  <li><a href="#parentmanager">Ustawienia kontroli rodzicielskiej</a></li>
+               </ol>
+            </li>
+            <li><a href="#discovergui">Odkrywanie Graficznego Interfejsu Użytkownika</a></li>
+            <li><a href="#discoverfeatures">Funkcje wyszukiwania</a>
+               <ol>
+                  <li><a href="#favchannels">Ulubione kanały</a></li>
+                  <li><a href="#vodbrowser">Wideoteka</a></li>
+                  <li><a href="#archive">Archiwum</a></li>
+                  <li><a href="#timerrec">Nagrywanie</a></li>
+                  <li><a href="#otr">Łatwe / szybkie nagrywanie</a></li>
+                  <li><a href="#clfilter">Filtr listy kanałów</a></li>
+                  <li><a href="#watchlist">Lista odtwarzania</a></li>
+                  <li><a href="#context">Video Context Menu</a></li>
+                  <li><a href="#fullscreen">Tryb Pełno-Ekranowy</a></li>
+                  <li><a href="#minimode">Tryb Minimalny</a></li>
+               </ol>
+            </li>
+         </ol>
+      </div>
+      -->
+      <h2 id="about">O programie</h2>
+      [%PROGRAM%] jest narzędziem służącym  do oglądania / nagrywania sygnału IPTV nadawanego przez [%SERVICE%].
+      Jest napisany językiem C++ przy użyciu podbudowy <a class="extern" href="http://qt-project.org/" target="_blank">Qt framework by Qt Project <img src="images/external.png" alt="external" /></a>.
+      Funkcjonalność  zawdzięcza użyciu  pliku libvlc od <a class="extern" href="http://www.videolan.org/vlc/" target="_blank">Videolan VLC Player <img src="images/external.png" alt="external" /></a>.
+      <!-- [%HIDEPROJECT%]
+      <br />
+      [%PROGRAM%] jest otwartym oprogramowaniem. Zawsze można znaleźć kod źródłowy jak i najnowsze modyfikacje na
+      <a class="extern" href="http://code.google.com/p/vlc-record/" target="_blank">stronie projektu <img src="images/external.png" alt="external" /></a>
+      (zarządzane  przez Google).
+      [%HIDEPROJECT%] -->
+      <h2 id="versions">Wersje</h2>
+      Dostępne są następujące wersje:
+      <ul>
+         <li>Windows (XP lub nowszy)</li>
+         <li>Mac OSX 10.6 x86_64 lub nowszy</li>
+         <li>Ubuntu Linux i386/amd64 (obecna wersja)</li>
+      </ul>
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h2 id="features">Cechy</h2>
+      [%PROGRAM%] posiada następujące cechy:
+      <ul>
+         <li>Odtwarzanie / nagrywanie programów na żywo</li>
+         <li>EPG - elektroniczny przewodnik TV (spis oraz opis programów)</li>
+         <li>Archiwum - 2 tygodnie dla większości kanałów  (odtwarzanie / nagrywanie)</li>
+         <li>Opoźnienie nagrywania</li>
+         <li>VOD - wideoteka na życzenie (odtwarzanie / nagrywanie)</li>
+         <li>Zarządzanie blokadą rodzicielską</li>
+         <li>Łatwe / szybkie nagrywanie</li>
+         <li>Lista odtwarzania</li>
+         <li>Funkcja zrzut ekranu</li>
+      </ul>
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h2 id="installation">Instalacja</h2>
+      <h3>Windows</h3>
+      Program zostanie zainstalowany domyślnie w lokalnym folderze aplikacji
+      (c:\Users\[User Name]\AppData\Local\[%PROGRAM%]). To oznacza, że nie musisz posiadać
+      uprawnień administratora żeby zainstalować program.<br />
+      Ustawienia programu bedą przechowywane w twoim lokalnym folderze roaming
+      (c:\Users\[User Name]\AppData\Roaming\[%PROGRAM%]).
+      <h3>Mac OSX</h3>
+      Po otworzeniu pliku dmg możesz go przeciągnąć i włożyć do folderu aplikacje.<br />
+      Ustawienia programu bedą przechowywane w folderze macierzystym (~/.[%PROGRAM%]).
+      <h3>Ubuntu</h3>
+      Po podwójnym kliknięciu na pakiet deb wszystkie zależności jak i program zostaną zainstalowane.
+      Pakiet instalacyjny będzie dodany do systemu. Aby uruchomić program proszę otworzyć dash
+      (przycisk Windows) i wpisać pierwsze litery nazwy programu. Teraz program powinien pojawić
+      się na liście dash i można go uruchomić klikając na ikonę uruchamiania.<br />
+      Ustawienia programu bedą przechowywane w folderze macierzystym (~/.[%PROGRAM%]).
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h2 id="ftsettings">Pierwsze ustawienia</h2><br />
+      <img src="images/lang/pl/ftsettings.png" alt="First Time Settings Dialog" title="First Time Settings Dialog" /><br />
+      Proszę wpisać dane dostępu w tym miejscu (subskrybcja i hasło). Jeśli chcesz mieć wyświetlane kanały
+      erotyczne na swojej liście kanałów, zaznacz odpowiednie pole. Jeśli wpiszesz kod blokady rodzicielskiej
+      w polu poniżej, będziesz mógł oglądać te kanały bez konieczności wpisywania kodu blokady rodzicielskiej
+      za każdym razem. <b>Ważne: kod blokady rodzicielskiej to również hasło logowania, przynajmniej dopóki
+      się go nie zmieni.</b><br />
+      To okno dialogowe jest wyświetlane po uruchomieniu programu po raz pierwszy.
+      Możesz wymusić wyświetlanie tego okna, jeśli usuniesz folder dla programów ustawień.
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h2 id="settings">Ustawienia</h2>
+      Możesz wejść w ustawienia przyciskając podany symbol: <img src="images/tools.png" alt="Settings" title="Settings" />
+      <h3 id="mainsettings">Ustawienia głowne</h3><br />
+      <img src="images/lang/pl/set_main.png" alt="Main Settings" title="Main Settings" /><br />
+      W tej zakładce możesz zmienić / wpisać głowne ustawienia programu:
+      <ul>
+         <li>Abonament / hasło</li>
+         <li>Ścieżka nagrywania - Gdzie zapisać nagrania?</li>
+         <li>Ścieżka Playera - Jeśli chcesz użyć zewnętrznego odtwarzacza musisz wybrać plik tutaj wykonywalny (opcjonalnie).</li>
+         <li>Serwer strumieniowy (miejsce) - Wybierz najbliższy.</li>
+         <li>Bitrate - Wybierz pomiędzy "Premium", "Standard", "Eco" i "Mobile".</li>
+         <li>Buforowanie - Czas buforowania w sekundach. Zwiększ jego wartość jeśli napotkasz problemy w odtwarzaniu wideo (domyślnie: 8s).</li>
+         <li>Przesunięcie czasowe - Liczba godzin pomiędzy czasem środkowoeurpoejskim, a twoim miejscem zamieszkania.</li>
+         <li>Język - Zostanie zastosowany dopiero po zapisaniu ustawień.</li>
+         <li>Ponowne zalogowanie logo - Jeśli napotkasz blędy na liście kanałów (np: logo nie odpowiada kanałowi) możesz tutaj ponownie załadować wszystkie loga kanałów.</li>
+         <li>Dostosuj rozmiar czcionki – tutaj możesz zmienić rozmiar czcionki wykorzystywanej w programie.</li>
+         <li>Ustawienia zaawansowane - Umożliwiają wejście w zakładke ustawień zaawansowanych (domyślnie: wyłączone).</li>
+      </ul>
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="shortcuts">Skróty</h3><br />
+      <img src="images/lang/pl/set_shortcuts.png" alt="Shortcut Settings" title="Shortcut Settings" /><br />
+      Tutaj możesz zmienić domyślne ustawienia skrótów w używanych przez program. Żeby to zrobić zaznacz skrót
+      używając myszki. Teraz wciśnij nową kombinacje, która ma oznaczać skrót. Jeżeli tekst zmieni się na
+      czerwono to już użyłeś tego skrótu do innej komendy.<br />
+      Możesz przywrócić skróty na domyślne używając przycisku narzedzi w lewym dolnym rogu tego okna.
+      <!-- <div class="toplink"><a href="#about" target="_self">Top</a></div> -->
+      <h3 id="advsettings">Ustawienia zaawansowane</h3><br />
+      <img src="images/lang/pl/set_advanced.png" alt="Advanced Settings" title="Advanced Settings" /><br />
+      W tym oknie możesz zmienić następujące ustawienia programu:
+      <ul>
+         <li>Server Proxy - Konfiguracja serwera proxy, jeśli nie można się podłączyć bezpośrednio do Internetu.</li>
+         <li>Server API - Zmiana serwera API. Można aktywować to pole przez naciskanie <b>Ctrl+Alt+A</b><!-- [%HIDEPROJECT%] (domyślnie [%APISERVER%] {Nie zalecamy zmian!})[%HIDEPROJECT%] -->.</li>
+         <li>Moduł odtwarzania - Zależne pola konfiguracyjne Playera. Wybierz pomiędzy "5_libvlc.mod" a "9_libvlc_odl.mod" (domyślnie: 5_libvlc.mod).
+         Możesz mieć wgląd w moduł plików, aby przekonać się co się tam dzieje. Nie zalecamy ingerowania jeżeli nie wiesz co robisz!</li>
+         <li>Poziom logowania - Konfiguracja tego co ma być przypisane do profile logowania (domyślnie: logowanie wszystkich).
+         Jeśli potrzebujesz pomocy gdy coś nie działa tak jak tego oczekujesz - nie zmieniaj tutaj niczego!</li>
+         <li>Polecenie wyłączenia - Jeśli chcesz wyłączyć swój computer (np: po nagrywaniu czasowym) możesz tutaj umieścić komendę.
+         Dla systemu Windows jest ustawiona komenda domyślna.</li>
+         <li>Zapytaj o nazwę pliku nagrania - Program zapyta o nazwie pliku jak tylko będziesz chciał nagrać jakiś program (domyślnie: wyłączone).</li>
+         <li>Odłącz odtwarzacz podczas uruchamiania - Jeżeli używasz zewnętrznych odtwarzaczy zostaną odłączone od [%PROGRAM%].
+         Wtedy działają one niezależnie i [%PROGRAM%] nie kontroluje tego procesu (domyślnie: wyłączony).</li>
+         <li>Kliknij dwukrotnie na początek odtwarzania listy kanałów - Jeżeli jest <b>wyłączony</b> odtwarzanie zacznie się gdy
+         klikniesz na dany kanał na liście kanałów (domyślnie: włączony).</li>
+         <li>Minimalizuj do Systray - Jeżeli jest włączony program będzie ukryty w pasku narzędzi.
+         Zamiast tego ikona w pasku narzędzi będzie informować o działającym programie (domyślnie: wyłączony).</li>
+         <li>Transliteracja nazwy pliku nagrania - Transliteruje nazwę nagrania z cyrilycy na alfabet łaciński (domyślnie: wyłączony).</li>
+         <li>Przyśpieszenie GPU - Użycie GPU do dekodowania wideo (wysoce eksperymentalne, domyślnie: wyłączony).</li>
+         <li>Tryb przeplatany - Gdy włączony- tryb ten będzie używał algorytmu do usuwania przeplotu (domyślnie: blend).</li>
+         <!-- [%HIDDEN%]
+         <li>Pokaż pomoc - Pokaz reklam na początku nagrania (VOD). Zmienny tylko w VLC-Record (domyślnie: włączony).</li>
+         [%HIDDEN%] -->
+         <li>EPG zaczyna się o 00:00 - jeśli EPG jest włączone zostanie pokazane od 00:00 ... 24:00, jeśli wyłączone zostanie pokazane od 03:00 ... 03:00 (domyślnie: włączone).</li>
+      </ul>
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="parentmanager">Ustawienia kontroli rodzicielskiej</h3><br />
+      <img src="images/lang/pl/set_parent_login.png" alt="Parental Login" title="Parental Login" /><br />
+      Wpisz swój kod blokady rodzicielskiej, aby wejść w ustawienia kontroli rodzicielskiej.<br /> <br />
+      <img src="images/lang/pl/set_parent_manager.png" alt="Parental Manager" title="Parental Manager" /><br />
+      Możesz tutaj zmienić następujące ustawienia:
+      <ul>
+         <li>Ustawienia kanałów - Wybrane kanały bedą <b>ukryte</b> na liście kanałów.</li>
+         <li>Ustawienia wideoteki - Dostęp do wybranych gatunków filmowych.</li>
+         <li>Kod blokady rodzicielskiej - Tutaj możesz zmienić kod blokady rodzicielskiej.</li>
+         <li>Zezwól na kanały dla dorosłych - Tutaj możesz wybrać co ma sie stać z kanałami dla dorosłych (na liście kanałów).</li>
+      </ul>
+      <b>Ważne: Musisz zapisać te ustawienia bezpośrednio w  ustawieniach kontroli rodzicielskiej. Są one niezależne od innych ustawień.</b>
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h2 id="discovergui">Odkrywanie Graficznego Interfejsu Użytkownika</h2><br />
+      <img src="images/lang/pl/whole_view.png" alt="Whole View" title="Whole View" /><br />
+      Po lewej stronie widnieje lista kanałów. Nad listą kanałów jest pole zarezerwowane na ulubione kanały.
+      W lewym górnym rogu można wybrać pomiędzy programami na żywo a wideoteką (VOD) – opcjonalne.<br />
+      Na środku Graficznego Interfejsu Użytkownika można zobaczyć elektroniczny przewodnik TV (EPG).
+      Pokazuje on programy na dany dzień i kanał. Na górze elektronicznego przewodnika TV dostępne są przciski
+      do wyboru dnia tygodnia oraz pozwalające zmienić tydzień (do przodu lub tyłu).
+      Na dole przewodnika można zauważyć pole wyszukiwania, które pozwala wyszukać słowa w aktualnie
+      wyświetlonej liście programów.<br />
+      Po prawej stronie na górze można zaobserwować okno odtwarzania.
+      Poniżej są przyciski służace do nawigowania, pod nimi znajduje się mały pasek informacyjny.<br />
+      Przycisk zrzutu ekranu znajduje się u dołu, po lewej stronie ekranu odwarzacza.
+      Przycisk ten można znaleźć na panelu zarządzania w trybie pełnoekranowym oraz trybie minimalnym.<br />
+      W prawym dolnym rogu znajdują się przycisk ustawień, pomocy oraz wyjścia.
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h2 id="discoverfeatures">Funkcje wyszukiwania</h2>
+      <h3 id="favchannels">Ulubione kanały</h3><br />
+      <img src="images/lang/pl/chan_add_favourite.png" alt="Add Favourite" title="Add Favourite" /><br />
+      Możesz wybrać do 10 ulubionych kanałów - poprzez kliknięcie prawego przycisku myszy i wybranie "Dodaj do ulubionych"
+      jak i poprzez przeciagnięcie wybranego kanału w odpowiednie pole. Teraz kanał powinien znajdować się w polu
+      nad listą kanałów. Jeśli naciśniesz dany kanał w polu ulubione,  zostanie on wybrany i załaduje się
+      elektroniczny przewodnik dla tego wyboru. Możesz usunąć kanał z ulubionych klikając prawym przyciskiem myszy.
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="vodbrowser">Wideoteka (dla posiadających tą opcję)</h3><br />
+      <img src="images/lang/pl/vod_show.png" alt="Show VOD Browser" title="Show VOD Browser" /><br />
+      Możesz aktywować przeglądarkę wideoteki klikając na zakładkę w lewym górnym rogu.<br /> <br />
+      <img src="images/lang/pl/vod_genre.png" alt="Choose Genre" title="Choose Genre" /><br />
+      Możesz wybrać gatunek ...<br /> <br />
+      <img src="images/lang/pl/vod_sort.png" alt="Sort" title="Sort" /><br />
+      ... i rodzaj nagrania. Tutaj możesz również wybrać ulubione nagrania.<br /> <br />
+      <img src="images/lang/pl/vod_search.png" alt="Search VOD" title="Search VOD" /><br />
+      Lub po prostu wyszukać film.<br /> <br />
+      <img src="images/video_choose.png" alt="Choose Video" title="Choose Video" /><br />
+      Wybierasz wideo klikając myszą.<br /> <br />
+      <img src="images/lang/pl/vod_videoinfo.png" alt="Video Information" title="Video Information" /><br />
+      Teraz można zobaczyć informacje o wybranym filmie. Można dodać / usunąć film z ulubionych klikając na serce (górna część okna).
+      Można nagrywać lub odtwarzać film klikając na przyciski poniżej. Kliknięcie na <b>[Powrót]</b> odsyła do poprzedniej strony.
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="archive">Archiwum</h3>
+      Archiwum jest dostępne dla większości kanałów. Oznacza to, że można oglądać każdy program,
+      który był wyemitowany na danym kanale w przeciągu ostatnich dwóch tygodni.<br />
+      <img src="images/lang/pl/rec_archive.png" alt="Archive Play Record" title="Archive Play Record" /><br />
+      Można oglądać lub nagrywać ten program klikając przycisk odtwórz / nagraj w elektronicznym przewodniku TV.
+      Jeśli wybierzesz tutaj odtwórz możesz obejrzeć dowolny moment audycji przeciągając pasek z nagrania w odpowiednie miejsce.
+      <br /> <br />
+      <img src="images/click_n_go_slider.png" alt="Click'n'Go Slider" title="Click'n'Go Slider" /><br />
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="timerrec">Nagrywanie</h3>
+      Możesz otworzyć okno dialogowe nagrywania przez naciśnięcie przycisku
+      <img src="images/timerrec_own.png" alt="Timer Record" title="Timer Record" /> lub klikając na zegarek w
+      elektronicznym przewodniku.<br />
+      <img src="images/lang/pl/add_timer_rec.png" alt="Save as Timer" title="Save as Timer" /><br /> <br />
+      Otworzy się okno dialogowe nagrywania:<br />
+      <img src="images/lang/pl/timer_record.png" alt="Timer Record Dialog" title="Timer Record Dialog" /><br />
+      W tym oknie można zaplanować nagrywanie. Można wybrać kanał, z którego ma pochodzić na granie. Trzeba też podać nazwę pliku,
+      pod jakim ma być zapisane nagranie. Trzeba podać czas rozpoczęcia i zakończenia programu. Wybierając
+      "ciche nagrywanie" Player nagra program, ale nie przekaz. Wybierając "zamknij jeśli wszystko zrobione"
+      komputer zostanie wyłączony po zakończeniu nagrywania. Ta opcja jest możliwa tylko jeśli posiada się
+      ustawione polecenie wyłączania w <a href="#advsettings">ustawieniach</a>.
+      Kliknięcie na przycisk <img src="images/add.png" alt="Add Job" title="Add Job" /> spowoduje dodanie komendy
+      nagrania do listy zadań. Można edytować zgromadzone  nagrania na liście zadań dwukrotnie klikając na dane nagranie.
+      Dane będą wyświetlone powyżej. Teraz będzie można wykonać zmiany. Kliknięcie na przycisk
+      <img src="images/add.png" alt="Add Job" title="Add Job" />
+      spowoduje zapisanie zmian. Można usunąć zgromadzone nagrania z listy zadań poprzez zaznaczenie ich
+      i kliknięcie przycisku <img src="images/delete.png" alt="Remove Job" title="Remove Job" />.
+      Podczas dodawania nowego nagrania program sprawdzi zgodność.
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="otr">Łatwe / szybkie nagrywanie</h3><br />
+      <b>Info:</b> Nie mylić z <a href="#timerrec">Nagrywaniem</a>!<br />
+      Umożliwia ustawienie czasu, po którym nagrywanie zostanie zatrzymane. Ta funkcja będzie dostępna podczas
+      nagrywania programu strumieniowanego, bądź też odtwarzanego z archiwum. Zostatnie to zasygnalizowane
+      zmianą wyglądu przycisku nagrywanie z <img src="images/record.png" alt="record" title="record" />
+      na <img src="images/record_timer.png" alt="record" title="record" />.
+      Naciśnięcie tego przycisku wywoła okno dialogowe:<br />
+      <img src="images/lang/pl/record_timer.png" alt="record timer" title="record timer" /><br /> <br />
+      W tym oknie ustawić można czas trwania nagrania. Wciśnięcie przycisku
+      <img src="images/button_ok.png" alt="set" title="set" /> rozpoczyna odliczanie. Można już zamknąć okno dialogowe.<br />
+      <img src="images/lang/pl/close_record_timer.png" alt="close dialog" title="close dialog" /><br /> <br />
+      Po upływie zaplanowanego czasu nagrywanie zatrzyma się automatycznie.<br />
+      <b>Zapamiętaj:</b> Możesz zmienić ustawienia licznika, bądź go wyłączyć klikająć ponownie na przycisk nagrywania.
+      Wciśnięcie przycisku <img src="images/delete.png" alt="Cancel Timer" title="Cancel Timer" />
+      anuluje zaplanowany czas zakończenia nagrywania.
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="clfilter">Filtr listy kanałów</h3><br />
+      Możesz filtrować/przeszukiwać listę kanałów dla danego ciągu znaków.
+      Aby właczyć filtr kliknij przycisk po prawej stronie okna listy kanałów:<br />
+      <img src="images/lang/pl/chanlist_filter.png" alt="channel list filter" title="channel list filter" /><br /> <br />
+      Teraz możesz wpisać ciąg znaków:<br />
+      <img src="images/lang/pl/chanlist_filter_string.png" alt="channel list filter string" title="channel list filter string" /><br /> <br />
+      Po zaakceptowaniu lista kanałów wyświetli się przefiltrowana (wszystkie kanały, które zawierają dany ciąg znaków zostaną wyświetlone na liście).
+      Przycisk filtr zmieni się na <img src="images/filter_active.png" alt="active filter" title="active filter" />
+      aby odwzorować aktywny filtr. Aby wyłączyć filtr, usuń ciąg znaków i potwierdź pusty filtr.
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="watchlist">Lista odtwarzania</h3><br />
+      Lista odtwarzania - jest to lista zawierająca wszystkie programy, które chcesz obejrzec w późniejszym czasie.
+      Aby dodać program do listy odtwarzania naciśnij przycisk <img src="images/page_add.png" alt="add show" title="add show" />
+      w oknie <a href="#archive">EPG</a>.
+      Cyfra znajdująca się na ikonie listy odtwarzania będzie wyświetlała aktualną liczbę pozycji zapisanych na liście odtwarzania:<br />
+      <img src="images/watch_list_btn.png" alt="watch list button" title="watch list button" /><br /> <br />
+      Aby otworzyć listę odtwarzania kliknij na ikonę listy odtwarzania. Otworzy się nowe okno zawierające listę wszystkich dodanych programow.
+      Z poziomu okna możesz oglądać lub nagrywać każdy dodany program. Możliwe jest także nagrywanie wszystkich programów jednocześnie.
+      Lista kanałów które możesz dodać jest nieograniczona. Możesz także usunąć dany kanał z listy używając przycisk
+      <img src="images/del_sm.png" alt="del show" title="del show" />.<br />
+      <img src="images/lang/pl/watchlist.png" alt="watch list" title="watch list" /><br /> <br />
+      <b>Uwaga:</b> Lista odtwarzania dostępna jest tylko dla programów, które posiadają archiwum.
+      Pozycje które znajdują się poza okresem archiwum zostaną automatycznie usunięte.
+      Możesz także dodać programy które nie są jeszcze dostępne w archiwum. W tym przypadku przyciski odtwarzania
+      i nagrywania pojawią się gdy program zostanie dodany do archiwum.
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="context">Menu kontekstowe wideo</h3>
+      Okno wideo posiada menu kontekstowe z kilkoma przydatnymi funkcjami.
+      Możesz otworzyć to menu klikając prawym przyciskiem myszy na okno wideo.
+      W menu tym możesz włączyć/wyłączyć tryb przeplatany, a także zmienić język audio
+      odtwarzanego wideo(gdy dostępne).<br />
+      <img src="images/lang/pl/play_context_audio.png" alt="player context audio menu" title="player context audio menu" /><br /> <br />
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="minimode">Tryb Minimalny</h3><br />
+      Włączając tryb minimalny cały intefejs zostanie zredukowany do jednego okna. Wyłącznie w tym trybie widoku,
+      można zmusić okno aby zawsze było na wierzchu (zawsze widoczne). Opcja ta jest bardzo przydatna,
+      np. jeśli pracujemy nad jakimś dokumentem i jednocześnie mamy potrzebę oglądania ważnych dla nas wiadomości lub programów.
+      Można przełączać się pomiędzy tym widokiem, za pomocą przycisku
+      <img src="images/window_accept.png" alt="minimode button" title="minimode button" />,
+      lub używając menu kontekstowego.<br />
+      <img src="images/lang/pl/play_context.png" alt="player context minimode menu" title="player context minimode menu" /><br /> <br />
+      Tylko w menu kontekstowym możesz zadecydować czy chcesz aby player pozostał na wierzchu
+      i czy chcesz ukryć panel kontrolny w trybie minimalnym.<br />
+      Możesz opóścić tryb minimalny używając menu kontekstowego lub przycisku w panelu kontrolnym.<br /> <br />
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <h3 id="fullscreen">Tryb Pełno-Ekranowy</h3><br />
+      <img src="images/fullscreen.png" alt="full screen mode" title="full screen mode" /><br /> <br />
+      [%PROGRAM%] wspiera tryb pełnego ekranu. Można przełączyć w tryb peło-ekranowy przez podwójne kliknięcie na ekranie,
+      poprzez aktywowanie <a href='#shortcuts'>pełen ekran skrót</a> lub także na niebieską ikonę tak jak na następującym rysunku.<br />
+      <img src="images/switch_to_fullscreen.png" alt="switch to full screen" title="switch to full screen" /><br /> <br />
+      Po poruszeniu myszką zostanie wyświetlony panel. Ten panel ma taką samą funkcjonalność jak panel kontrolny w normalnym
+      trybie niepełno-ekranowym. Panel pozostanie wyświetlany tak długo jak kursor na nim pozostanie. Gdy kursor nie znajdzie
+      się na panelu, panel zniknie z ekranu po paru sekundach.<br />
+      Panel ten można umiejscowić dowolnie. Najedż myszką na panel tak jak jest to pokazane na następnym rysunku.
+      Kursor zamieni się w ikone ręki i trzymając przycisk możesz swobodnie umiejscowić panel.<br />
+      <img src="images/lang/pl/fullscreen_move_panel.png" alt="Move control panel" title="Move control panel" /><br /> <br />
+      Możesz wyjść z trybu pełno-ekranowego dokładnie tak jak go przywołałeś, czyli:
+      <ul>
+        <li>Podwójne kliknięcie na ekranie,</li>
+        <li>Aktywowanie pełen ekran skrót.</li>
+        <li>Naciśnięcie przycisku tak jak jest to pokazane na następującym rysunku.</li>
+      </ul><br /> <!-- Note: The break is needed here!
+                       Without it it looks strange in help browser
+                       ... don't know why!
+                  -->
+      <img src="images/lang/pl/fullscreen_to_normal.png" alt="leave full screen" title="leave full screen" />
+      <br /> <br />
+      W trybie standardowym dodatkowe ustawienia i informacje są ukryte:<br />
+      <img src="images/lang/pl/panel_hidden_inf.png" alt="Hidden Information" title="Hidden Information" /><br />
+      Możesz otworzyć te ustawienia i informacje, klikając na strzałki zaznaczone na zrzucie ekranu powyżej.<br />
+      <img src="images/lang/pl/panel_shown_inf.png" alt="Visible Information" title="Visible Information" /><br /> <br />
+      <!-- <div class="toplink"><a href="#top">Top</a></div> -->
+      <!-- <b style='color: red;'>Please translate --&gt;</b>Whatever<b style='color: red;'>&lt;-- Please translate</b> -->
+   </body>
+</html>
