@@ -11,7 +11,7 @@ fi
 
 for CUST in $CUSTS ; do
 
-    svn-clean >/dev/null 2>&1
+    git clean -f
 
     case $CUST in
        vlc-record)
