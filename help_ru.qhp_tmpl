@@ -25,30 +25,18 @@
                  <section title="Описание графического интерфейса" ref="help_ru.html#discovergui" />
                  <section title="Описание дополнительных возможностей" ref="help_ru.html#discoverfeatures">
                      <section title="Избранные каналы" ref="help_ru.html#favchannels" />
+<!--
                      <section title="Видеотека" ref="help_ru.html#vodbrowser" />
+-->
                      <section title="Архив" ref="help_ru.html#archive" />
                      <section title="Планировщик записи" ref="help_ru.html#timerrec" />
                      <section title="Ограничение времени записи" ref="help_ru.html#otr" />
                      <section title="Фильтр списка каналов" ref="help_ru.html#clfilter" />
                      <section title="Список отложенных передач" ref="help_ru.html#watchlist" />
                      <section title="Видео-контекстное меню" ref="help_ru.html#context" />
-                     <section title="Мини-интерфейс" ref="help_ru.html#minimode" />
                      <section title="Полноэкранный режим" ref="help_ru.html#fullscreen" />
+                     <section title="Мини-интерфейс" ref="help_ru.html#minimode" />
                  </section>
-             </section>
-             <section title="Changelog" ref="changelog.html">
-                 <section title="Version 2.72" ref="changelog.html#2.72" />
-                 <section title="Version 2.70" ref="changelog.html#2.70" />
-                 <section title="Version 2.68" ref="changelog.html#2.68" />
-                 <section title="Version 2.66" ref="changelog.html#2.66" />
-                 <section title="Version 2.64" ref="changelog.html#2.64" />
-                 <section title="Version 2.62" ref="changelog.html#2.62" />
-                 <section title="Version 2.60" ref="changelog.html#2.60" />
-                 <section title="Version 2.58" ref="changelog.html#2.58" />
-                 <section title="Version 2.56" ref="changelog.html#2.56" />
-                 <section title="Version 2.54" ref="changelog.html#2.54" />
-                 <section title="Version 2.52" ref="changelog.html#2.52" />
-                 <section title="Version 2.50" ref="changelog.html#2.50" />
              </section>
          </toc>
          <keywords>
@@ -56,7 +44,9 @@
              <keyword name="timer" ref="help_ru.html#timerrec" />
              <keyword name="settings" ref="help_ru.html#settings" />
              <keyword name="favourites" ref="help_ru.html#favchannels" />
+<!--
              <keyword name="vod" ref="help_ru.html#vodbrowser" />
+-->
              <keyword name="parent" ref="help_ru.html#parentmanager" />
              <keyword name="filter" ref="help_ru.html#parentmanager" />
              <keyword name="porno" ref="help_ru.html#parentmanager" />
@@ -66,7 +56,6 @@
          <files>
              <file>help.css</file>
              <file>help_ru.html</file>
-             <file>changelog.html</file>
              <file>images/*.png</file>
              <file>images/lang/ru/*.png</file>
          </files>

@@ -25,30 +25,18 @@
                  <section title="Odkrywanie Graficznego Interfejsu Użytkownika" ref="help_pl.html#discovergui" />
                  <section title="Funkcje wyszukiwania" ref="help_pl.html#discoverfeatures">
                      <section title="Ulubione kanały" ref="help_pl.html#favchannels" />
+<!--
                      <section title="Wideoteka" ref="help_pl.html#vodbrowser" />
+-->
                      <section title="Archiwum" ref="help_pl.html#archive" />
                      <section title="Nagrywanie" ref="help_pl.html#timerrec" />
                      <section title="One Touch Record" ref="help_pl.html#otr" />
                      <section title="Filtr listy kanałów" ref="help_pl.html#clfilter" />
                      <section title="Lista odtwarzania" ref="help_pl.html#watchlist" />
                      <section title="Menu kontekstowe wideo" ref="help_pl.html#context" />
-                     <section title="Tryb Minimalny" ref="help_pl.html#minimode" />
                      <section title="Tryb Pełno-Ekranowy" ref="help_pl.html#fullscreen" />
+                     <section title="Tryb Minimalny" ref="help_pl.html#minimode" />
                  </section>
-             </section>
-             <section title="Changelog" ref="changelog.html">
-                 <section title="Version 2.72" ref="changelog.html#2.72" />
-                 <section title="Version 2.70" ref="changelog.html#2.70" />
-                 <section title="Version 2.68" ref="changelog.html#2.68" />
-                 <section title="Version 2.66" ref="changelog.html#2.66" />
-                 <section title="Version 2.64" ref="changelog.html#2.64" />
-                 <section title="Version 2.62" ref="changelog.html#2.62" />
-                 <section title="Version 2.60" ref="changelog.html#2.60" />
-                 <section title="Version 2.58" ref="changelog.html#2.58" />
-                 <section title="Version 2.56" ref="changelog.html#2.56" />
-                 <section title="Version 2.54" ref="changelog.html#2.54" />
-                 <section title="Version 2.52" ref="changelog.html#2.52" />
-                 <section title="Version 2.50" ref="changelog.html#2.50" />
              </section>
          </toc>
          <keywords>
@@ -56,7 +44,9 @@
              <keyword name="timer" ref="help_pl.html#timerrec" />
              <keyword name="Ustawienia" ref="help_pl.html#settings" />
              <keyword name="favourites" ref="help_pl.html#favchannels" />
+<!--
              <keyword name="vod" ref="help_pl.html#vodbrowser" />
+-->
              <keyword name="kontroli" ref="help_pl.html#parentmanager" />
              <keyword name="filter" ref="help_pl.html#parentmanager" />
              <keyword name="porno" ref="help_pl.html#parentmanager" />
@@ -66,7 +56,6 @@
          <files>
              <file>help.css</file>
              <file>help_pl.html</file>
-             <file>changelog.html</file>
              <file>images/*.png</file>
              <file>images/lang/pl/*.png</file>
          </files>

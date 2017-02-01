@@ -6,7 +6,7 @@ QHCFOLDER="../qhc"
 if [ ${#} -gt 0 ]; then
    CUSTS=${1}
 else
-   CUSTS="polsky_tv kartina_tv vlc-record"
+   CUSTS="polsky_tv kartina_tv vlc-record tvclub"
 fi
 
 for CUST in $CUSTS ; do
@@ -41,6 +41,12 @@ for CUST in $CUSTS ; do
           APISERVER="iptv.moi-dom.tv"
           LANGUAGES="en ru de"
           ;;
+       tvclub)
+          PROGRAM="TVClub.us"
+          SERVICE=$PROGRAM
+          APISERVER="api.iptv.so"
+          LANGUAGES="en ru de"
+          ;;
        *)
           PROGRAM="VLC-Record"
           SERVICE="Kartina.TV"
@@ -66,7 +72,7 @@ for CUST in $CUSTS ; do
             sed -e "s/^.*\[%HIDDEN%\].*$//g" help_$i.qhp > $TMPFILE
             mv $TMPFILE help_$i.qhp
         fi
-       
+
         sed -e "s/<!-- \[%HIDEPROJECT%\]//g" -e "s/\[%HIDEPROJECT%\] -->//g" help_$i.html > $TMPFILE
         mv $TMPFILE help_$i.html
 
